@@ -1,0 +1,17 @@
+{
+  "_about": "Episode archive. No recordings exist yet, so the list is empty. When episodes are published, add one object per episode using the schema below. Set \"example\": true on any illustrative entry so the site labels it as an example, not a recording.",
+  "_schema": {
+    "id": "string, unique",
+    "title": "string",
+    "show": "show id from shows.json",
+    "host": "string or null",
+    "date": "YYYY-MM-DD",
+    "description": "string",
+    "scripture": ["e.g. Revelation 18:4"],
+    "topics": ["string"],
+    "durationSeconds": 0,
+    "audio": "URL to the recording",
+    "example": false
+  },
+  "episodes": []
+}

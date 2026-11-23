@@ -1,0 +1,106 @@
+/* ==========================================================
+   New Exodus Radio: responsive layout
+   Base styles are written for small screens; these rules
+   widen the layout as space allows.
+   40em ≈ 640px  ·  56em ≈ 896px  ·  64em ≈ 1024px  ·  80em ≈ 1280px
+   ========================================================== */
+
+/* ---------- Navigation: mobile panel below 64em ---------- */
+@media (max-width: 63.99em) {
+  .nav-toggle { display: inline-flex; }
+  .main-nav { order: 2; margin-left: auto; }
+  .btn-live { order: 3; }
+  .nav-list {
+    position: fixed; left: 0; right: 0; top: var(--header-h); bottom: 0;
+    flex-direction: column; gap: 0;
+    padding: 1rem var(--gutter) calc(var(--player-h) + 2rem);
+    background: var(--navy-950);
+    border-top: 1px solid var(--line);
+    overflow-y: auto;
+    visibility: hidden; opacity: 0; transform: translateY(-.5rem);
+    transition: opacity .2s var(--ease), transform .2s var(--ease), visibility 0s .2s;
+  }
+  .nav-open .nav-list { visibility: visible; opacity: 1; transform: none; transition: opacity .2s var(--ease), transform .2s var(--ease); }
+  .nav-list a { padding: 1rem 0; font-family: var(--font-display); font-size: 1.6rem; color: var(--white); border-bottom: 1px solid var(--line); border-radius: 0; }
+  .nav-list a[aria-current="page"] { box-shadow: none; color: var(--gold-light); }
+}
+
+@media (max-width: 30em) {
+  .brand-name { font-size: 1rem; letter-spacing: .08em; }
+  .brand-sub { letter-spacing: .42em; }
+  .brand-mark { width: 1.8rem; height: 1.8rem; }
+  .header-inner { gap: .6rem; }
+  .btn-live { padding-inline: .8rem; font-size: .82rem; }
+  .nav-toggle { padding: .5rem .65rem; }
+  .nav-toggle-label { display: none; }
+  .hero-actions .btn { flex: 1 1 100%; }
+  .sponsor-card { grid-template-columns: 1fr; }
+  .show-card.is-soon { flex-direction: column; }
+  .show-card.is-soon .show-art { width: 100%; aspect-ratio: 16 / 7; }
+}
+
+/* Feature strip: 2 x 2 on phones */
+@media (max-width: 47.99em) {
+  .feature-strip { grid-template-columns: 1fr 1fr; row-gap: .5rem; }
+  .feature-strip li:nth-child(3)::before { display: none; }
+  .feature-icon { width: 2.5rem; height: 2.5rem; }
+  .feature-title { font-size: .9rem; letter-spacing: .1em; }
+  .feature-sub { font-size: .66rem; letter-spacing: .08em; }
+}
+
+/* Small-screen player bar: art, title, play */
+@media (max-width: 47.99em) {
+  .player-bar .volume, .pb-link, .pb-next { display: none; }
+  .hero-pillar { left: 76%; }
+  .hero-dawn { left: 76%; }
+  .tuner-stations { height: auto; display: grid; grid-template-columns: 1fr 1fr; gap: .1rem 1rem; margin-top: .6rem; }
+  .station, .station:first-child, .station:last-child { position: static; transform: none; }
+  .station a { padding-inline: 0; }
+}
+
+/* ---------- 40em ---------- */
+@media (min-width: 40em) {
+  .shop-cats { grid-template-columns: repeat(2, 1fr); }
+  .prep-grid { grid-template-columns: repeat(2, 1fr); }
+  .prep-item { padding-left: 0; padding-right: 2rem; }
+  .prep-item:nth-child(2n) { padding-left: 2rem; }
+  .featured-player { grid-template-columns: auto 1fr; }
+  .prep-cards { grid-template-columns: repeat(2, 1fr); }
+  .prep-topic-list { grid-template-columns: repeat(2, 1fr); }
+  .fp-side { grid-column: 1 / -1; grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ---------- 56em ---------- */
+@media (min-width: 56em) {
+  .show-grid--main { grid-template-columns: repeat(3, 1fr); }
+  .show-grid--soon { grid-template-columns: repeat(2, 1fr); }
+  .mission { grid-template-columns: 1.1fr 1fr; align-items: start; }
+  .bridge-grid { grid-template-columns: 1fr 1fr; }
+  .prayer-inner { grid-template-columns: 1.3fr 1fr; gap: 4rem; }
+  .stories { grid-template-columns: 1.2fr 1fr; gap: 4rem; }
+  .sponsor-list { grid-template-columns: repeat(2, 1fr); }
+  .newsletter-inner { grid-template-columns: 1fr 1.1fr; gap: 3rem; }
+  .footer-grid { grid-template-columns: 1.6fr repeat(4, 1fr); gap: 2rem; }
+  .shop-cats { grid-template-columns: repeat(3, 1fr); }
+  .prep-grid { grid-template-columns: repeat(3, 1fr); }
+  .prep-item:nth-child(2n) { padding-left: 0; }
+  .prep-item:not(:nth-child(3n + 1)) { padding-left: 2rem; }
+}
+
+/* ---------- 64em ---------- */
+@media (min-width: 64em) {
+  .featured-player { grid-template-columns: 16rem 1fr 18rem; }
+  .fp-side { grid-column: auto; grid-template-columns: 1fr; }
+  .shop-cats { grid-template-columns: repeat(5, 1fr); }
+  .prep-cards { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 64em) and (max-width: 74em) {
+  .nav-list a { padding-inline: .5rem; font-size: .9rem; }
+}
+
+/* ---------- Print ---------- */
+@media print {
+  .site-header, .player-bar, .hero-sky, .hero-tuner { display: none !important; }
+  body { background: #fff; color: #000; padding: 0; }
+}

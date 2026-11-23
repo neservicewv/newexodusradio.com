@@ -1,0 +1,6 @@
+{
+  "_about": "Weekly broadcast schedule. Times are read in the time zone set in assets/js/config.js. Leave slots empty until times are decided. Example slot: { \"show\": \"coffee-with-jesus\", \"day\": \"monday\", \"start\": \"07:00\", \"end\": \"08:00\", \"tentative\": true, \"replay\": false }",
+  "status": "tba",
+  "message": "Schedule to be announced",
+  "slots": []
+}

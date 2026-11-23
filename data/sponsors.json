@@ -1,0 +1,27 @@
+{
+  "_about": "Sponsors and partners. Add an object to add a sponsor. Put an official logo in assets/images/sponsors/ and set \"logo\" to its path; until then the monogram placeholder is shown.",
+  "sponsors": [
+    {
+      "id": "ne-service",
+      "name": "N.E. Service",
+      "tagline": "Faith Driven Customer Focused Service.",
+      "description": "Custom CRM software, website design, hosting and management, and computer literacy training.",
+      "url": "https://neservicewv.com",
+      "domain": "neservicewv.com",
+      "cta": "Visit N.E. Service",
+      "logo": null,
+      "monogram": "N.E."
+    },
+    {
+      "id": "new-life-laptops",
+      "name": "New Life Laptops",
+      "tagline": "We rebuild computers, God rebuilds lives.",
+      "description": "Affordable refurbished computers and technology, built on a Christian foundation and focused on making technology accessible.",
+      "url": "https://newlifelaptops.com",
+      "domain": "newlifelaptops.com",
+      "cta": "Shop New Life Laptops",
+      "logo": null,
+      "monogram": "NLL"
+    }
+  ]
+}

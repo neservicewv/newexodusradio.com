@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Listen Live | New Exodus Radio</title>
+  <meta name="description" content="Listen to New Exodus Radio live. Our internet radio stream launches soon.">
+  <link rel="canonical" href="https://newexodusradio.com/listen-live.html">
+  <meta name="theme-color" content="#0d1b2e">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="New Exodus Radio">
+  <meta property="og:title" content="Listen Live | New Exodus Radio">
+  <meta property="og:description" content="Listen to New Exodus Radio live. Our internet radio stream launches soon.">
+  <meta property="og:url" content="https://newexodusradio.com/listen-live.html">
+  <meta property="og:image" content="https://newexodusradio.com/assets/images/branding/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/images/branding/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/player.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/schedule.js" defer></script>
+  <script src="assets/js/player.js" defer></script>
+</head>
+<body class="page-inner" data-root="" data-page="listen">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Listen live</h1>
+        <p>Our live stream isn’t on the air yet. When it launches, you’ll be able to listen right here or from the player at the bottom of any page.</p>
+      </div>
+    </section>
+    <section class="section section--tight">
+      <div class="container">
+        <div class="featured-player" data-player>
+          <div class="fp-art"><img data-player-art src="assets/images/branding/station-art.svg" alt="" width="256" height="256"></div>
+          <div class="fp-main">
+            <p class="fp-label"><span class="status-pill" data-player-status>Offline</span><span class="fp-eq" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span>Now playing</span></p>
+            <div><p class="fp-title" data-player-title>Nothing on the air right now</p><p class="fp-host" data-player-host hidden></p></div>
+            <div class="fp-controls">
+              <button class="play-btn play-btn--lg" type="button" data-player-toggle data-player-icons disabled></button>
+              <div class="volume"><button class="icon-btn" type="button" data-player-mute data-player-volicon></button><input type="range" min="0" max="100" step="1" value="80" data-player-volume aria-label="Volume"></div>
+            </div>
+            <p class="fp-connection" data-player-connection role="status">No broadcast source is connected yet.</p>
+          </div>
+          <div class="fp-side">
+            <div><h3>Up next</h3><p data-player-next>Schedule to be announced</p></div>
+            <div><h3>Schedule</h3><p class="fp-note"><a href="schedule.html">See the broadcast schedule</a></p></div>
+            <div><h3>Episodes</h3><p class="fp-note"><a href="episodes.html">Visit the episode archive</a></p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--tight">
+      <div class="container">
+        <div class="build-note">
+          <span class="badge badge--gold">Phase 6</span>
+          <h2 style="margin-top:.9rem">Live broadcasting is being prepared</h2>
+          <p>The player is built and ready. It goes live once a streaming provider is connected.</p>
+          <ul><li>Live audio through Icecast, SHOUTcast or a similar service</li><li>Current program and host shown automatically</li><li>Replays of past broadcasts</li></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+  <div id="player-bar"></div>
+</body>
+</html>

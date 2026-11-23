@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://newexodusradio.com/sitemap.xml

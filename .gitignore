@@ -1,0 +1,13 @@
+# Windows / OneDrive clutter
+Thumbs.db
+desktop.ini
+*.tmp
+~$*
+
+# Editors
+.vscode/
+.DS_Store
+
+# Never commit secrets
+.env
+*.key

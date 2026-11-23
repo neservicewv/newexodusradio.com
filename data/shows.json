@@ -1,0 +1,115 @@
+{
+  "_about": "Program directory. To replace a Coming Soon card with a real show, change its status to \"active\" and fill in the fields. \"dial\" is the station's position (0-100) on the homepage tuning dial. \"host\" stays null until the host approves a public biography.",
+  "shows": [
+    {
+      "id": "coffee-with-jesus",
+      "name": "Coffee with Jesus",
+      "shortName": "Coffee with Jesus",
+      "status": "active",
+      "period": "Mornings",
+      "category": "Morning devotional and biblical encouragement",
+      "summary": "Start your morning with Scripture, prayer, encouragement, and honest conversation about walking with Jesus Christ in everyday life.",
+      "topics": [
+        "Daily Scripture readings",
+        "Morning prayer",
+        "Growing closer to Jesus",
+        "Biblical encouragement",
+        "Personal testimonies",
+        "Overcoming spiritual struggles",
+        "Applying Scripture to everyday situations",
+        "Understanding the times through a biblical perspective"
+      ],
+      "exampleEpisode": {
+        "title": "Come Out of Her, My People",
+        "scripture": "Revelation 18:4",
+        "description": "What it means to separate ourselves spiritually from worldly corruption."
+      },
+      "host": null,
+      "theme": "sunrise",
+      "artwork": "assets/images/shows/coffee-with-jesus.svg",
+      "artworkAlt": "Sunrise over the hills behind a steaming coffee cup and an open Bible",
+      "page": "shows/coffee-with-jesus.html",
+      "dial": 10
+    },
+    {
+      "id": "upper-room-2",
+      "name": "The Upper Room Broadcast 2.0",
+      "shortName": "Upper Room 2.0",
+      "status": "active",
+      "period": "Times to be announced",
+      "category": "Biblical teaching, prayer and spiritual preparation",
+      "summary": "A new generation carrying forward a live radio ministry of worship, preaching and collective prayer, while preparing believers for the days ahead.",
+      "topics": [
+        "Biblical teaching",
+        "Spiritual readiness",
+        "Preparing the remnant",
+        "Prayer and intercession",
+        "Testimonies",
+        "Encouragement during difficult times",
+        "Understanding biblical prophecy",
+        "Strengthening faith",
+        "Remaining faithful to Jesus Christ"
+      ],
+      "exampleEpisode": null,
+      "host": null,
+      "theme": "candle",
+      "artwork": "assets/images/shows/upper-room-2.svg",
+      "artworkAlt": "Candlelight on a table beneath an arched window in an upper room",
+      "page": "shows/upper-room-2.html",
+      "dial": 33
+    },
+    {
+      "id": "night-watch",
+      "name": "Night Watch",
+      "shortName": "Night Watch",
+      "status": "active",
+      "period": "Evenings",
+      "category": "Prophecy, preparedness and spiritual watchfulness",
+      "summary": "An evening program for staying spiritually awake: examining the times through Scripture and helping households prepare without living in fear.",
+      "motto": "Stay Awake. Stand Firm. Be Ready.",
+      "segments": [
+        { "name": "The Watchman's Report", "description": "Important developments and what they may mean for Christian households." },
+        { "name": "Preparedness Corner", "description": "Practical instruction on emergency planning, food storage, water purification, backup power and household resilience." },
+        { "name": "Scripture Under the Lamp", "description": "A focused study of passages on faithfulness, endurance and watchfulness." },
+        { "name": "Questions From the Watchtower", "description": "Listener questions and discussion." }
+      ],
+      "exampleEpisode": null,
+      "host": null,
+      "theme": "night",
+      "artwork": "assets/images/shows/night-watch.svg",
+      "artworkAlt": "A watchtower silhouetted against a starry night sky with light on the horizon",
+      "page": "shows/night-watch.html",
+      "dial": 56
+    },
+    {
+      "id": "coming-soon-1",
+      "name": "New Program Coming Soon",
+      "status": "coming-soon",
+      "period": "",
+      "category": "A new voice is joining the network",
+      "summary": "A new voice is joining New Exodus Radio. More information about this upcoming program will be announced soon.",
+      "_internalConcept": "Possible future program: Titus Two Women Hour (not confirmed; do not publish as official).",
+      "host": null,
+      "theme": "soon",
+      "artwork": "assets/images/shows/coming-soon.svg",
+      "artworkAlt": "Broadcast signal waves on a dark blue background",
+      "page": "shows/coming-soon-1.html",
+      "dial": 76
+    },
+    {
+      "id": "coming-soon-2",
+      "name": "New Program Coming Soon",
+      "status": "coming-soon",
+      "period": "",
+      "category": "More conversations on the way",
+      "summary": "More conversations, more biblical teaching, and more opportunities to strengthen the body of Christ are on the way.",
+      "_internalConcept": "Possible future programs: Reality Check, Bridging the Gap (not confirmed; do not publish as official).",
+      "host": null,
+      "theme": "soon",
+      "artwork": "assets/images/shows/coming-soon.svg",
+      "artworkAlt": "Broadcast signal waves on a dark blue background",
+      "page": "shows/coming-soon-2.html",
+      "dial": 92
+    }
+  ]
+}

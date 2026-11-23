@@ -1,0 +1,29 @@
+name: Deploy to GoDaddy
+
+# Runs only when started by hand from the Actions tab.
+# Needs repository secrets FTP_SERVER, FTP_USERNAME, FTP_PASSWORD (see DEPLOY-GODADDY.md).
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Upload site to public_html
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: public_html/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            .github/**
+            Concepts/**
+            README.md
+            DEPLOY-GODADDY.md
+            start-server.bat
+            start-server.ps1

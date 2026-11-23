@@ -1,0 +1,24 @@
+{
+  "_about": "New Exodus Preparedness Shop. Phase 1 lists categories only. Products added in Phase 5 must set \"demo\": true until they are real inventory or a confirmed affiliate listing. \"fulfillment\" is \"direct\" or \"affiliate\".",
+  "_productSchema": {
+    "id": "string",
+    "name": "string",
+    "category": "category id",
+    "price": 0,
+    "currency": "USD",
+    "image": "assets/images/products/...",
+    "description": "string",
+    "fulfillment": "direct | affiliate",
+    "affiliateUrl": "string or null",
+    "inStock": false,
+    "demo": true
+  },
+  "categories": [
+    { "id": "water", "name": "Water preparedness", "items": ["Water filters", "Storage containers", "Gravity filtration", "Purification supplies"] },
+    { "id": "food", "name": "Food storage", "items": ["Emergency food supplies", "Storage containers", "Mylar bags", "Oxygen absorbers", "Shelf-stable kits"] },
+    { "id": "power", "name": "Emergency power", "items": ["Solar power stations", "Battery banks", "Solar chargers", "Emergency lighting"] },
+    { "id": "supplies", "name": "Emergency supplies", "items": ["First aid kits", "Emergency and weather radios", "Flashlights", "Emergency blankets", "Household kits"] },
+    { "id": "resources", "name": "Preparedness resources", "items": ["Printed guides", "Planning materials", "Educational resources"] }
+  ],
+  "products": []
+}
