@@ -11,3 +11,6 @@ desktop.ini
 # Never commit secrets
 .env
 *.key
+
+# Original guide files (the site uses the renamed copies in guides/)
+PDF Guides/

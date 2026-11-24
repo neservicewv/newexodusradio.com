@@ -514,6 +514,24 @@ button { font: inherit; }
 .page-hero .scripture-ref { margin-top: 1.2rem; }
 .breadcrumb { font-size: var(--fs-sm); margin-bottom: 1.2rem; color: var(--text-muted); }
 .breadcrumb a { color: var(--text-muted); }
+/* ---------- Downloadable PDF guides ---------- */
+.guides-box { max-width: 52rem; padding: 1.8rem; border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--navy-900); }
+.guides-box h2 { font-size: 1.5rem; }
+.guides-box > p { margin-top: .6rem; color: var(--text-muted); }
+.guide-list { list-style: none; margin-top: 1.4rem; border-top: 1px solid var(--line); }
+.guide-item { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .9rem 0; border-bottom: 1px solid var(--line); }
+.guide-item h3 { font-size: 1.08rem; }
+.guide-meta { font-size: var(--fs-sm); color: var(--text-muted); }
+.guide-item .btn { flex: none; }
+.guide-note { margin-top: 1.2rem; font-size: var(--fs-sm); }
+.guide-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1.2rem; margin-top: 1.3rem; }
+.guide-points { margin-top: 1.2rem; padding-left: 1.2rem; color: var(--text-muted); }
+.guide-points li + li { margin-top: .3rem; }
+.guides-box--single > .btn-outline { margin-top: 1.4rem; }
+.prep-card-dl { font-size: .92rem; color: var(--gold-light); text-decoration: underline; text-decoration-color: rgba(227,201,142,.4); text-underline-offset: 3px; }
+.prep-card-dl::before { content: "\2193\00a0"; text-decoration: none; display: inline-block; }
+.prep-card-dl:hover { color: var(--white); }
+
 .build-note { max-width: 46rem; padding: 1.6rem 1.8rem; border: 1px dashed var(--line-strong); border-radius: var(--radius); }
 .build-note h2 { font-size: 1.5rem; }
 .build-note p { margin-top: .6rem; color: var(--text-muted); }

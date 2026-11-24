@@ -96,4 +96,5 @@ assets/js/    config.js, main.js, player.js, schedule.js, shows.js, store.js
 assets/images/branding, shows, sponsors, preparedness, products
 assets/audio/
 data/         shows, schedule, episodes, sponsors, products (.json)
+guides/       downloadable PDF guides, one per preparedness area
 ```

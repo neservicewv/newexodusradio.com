@@ -7,6 +7,7 @@ This folder is the whole website. There's no build step: what's here is exactly 
 Upload everything **except** these (they're for working on the site, not for visitors):
 
 - `Concepts/` (design artwork drafts)
+- `PDF Guides/` (your original guide files; the site uses the renamed copies in `guides/`)
 - `README.md`, `DEPLOY-GODADDY.md`
 - `start-server.bat`, `start-server.ps1`
 - `.github/`, `.gitignore` (hidden GitHub files, if you see them)

@@ -23,6 +23,7 @@ jobs:
             **/.git*/**
             .github/**
             Concepts/**
+            PDF Guides/**
             README.md
             DEPLOY-GODADDY.md
             start-server.bat
