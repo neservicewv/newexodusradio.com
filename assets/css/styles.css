@@ -173,7 +173,7 @@ button { font: inherit; }
   min-height: min(calc(100svh - var(--player-h)), 62rem);
   display: flex; flex-direction: column; justify-content: flex-end;
   padding-top: calc(var(--header-h) + 3rem);
-  background: linear-gradient(180deg, #060d19 0%, #0b1a30 34%, #1c3354 58%, #4a5f7f 74%, #b6955d 90%, #e9c98a 100%);
+  background: #031426;
 }
 .hero-sky { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
 .hero-stars { position: absolute; inset: 0 0 45% 0; opacity: .7;
@@ -208,6 +208,27 @@ button { font: inherit; }
 .hero-land { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 38%; }
 @keyframes pillar-rise { from { opacity: 0; transform: translateX(-50%) scaleY(.35); } to { opacity: 1; transform: translateX(-50%) scaleY(1); } }
 @keyframes dawn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Header artwork (assets/images/branding/hero-header.jpg): the scene sits on the right,
+   the plain navy left side carries the live headline. Overlays keep text readable. */
+.hero-art {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: 72% center;
+  animation: dawn 1.6s var(--ease) both;
+}
+.hero-sky::after {
+  content: ""; position: absolute; inset: 0;
+  background:
+    linear-gradient(90deg, rgba(3,20,38,.92) 0%, rgba(3,20,38,.7) 30%, rgba(3,20,38,.15) 58%, rgba(3,20,38,0) 75%),
+    linear-gradient(180deg, rgba(6,13,25,.55) 0%, rgba(6,13,25,0) 22%, rgba(6,13,25,0) 62%, rgba(8,17,31,.9) 100%);
+}
+@media (max-width: 47.99em) {
+  .hero-art { object-position: 66% center; }
+  .hero-sky::after {
+    background: linear-gradient(180deg, rgba(6,13,25,.6) 0%, rgba(6,13,25,.35) 30%, rgba(6,13,25,.75) 62%, rgba(8,17,31,.95) 100%);
+  }
+}
+@media (prefers-reduced-motion: reduce) { .hero-art { animation: none; } }
 
 .hero-content { position: relative; padding-bottom: clamp(2rem, 4vw, 3.5rem); }
 .hero-title {
