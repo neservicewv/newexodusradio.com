@@ -400,6 +400,12 @@ button { font: inherit; }
   scroll-margin-top: calc(var(--header-h) + 1.5rem);
 }
 .prep-card:target { border-color: var(--gold); }
+.prep-card { overflow: hidden; }
+/* Card artwork (assets/images/preparedness/*.jpg): full-bleed across the top of the card */
+.prep-card-art { display: block; margin: -1.6rem -1.6rem .35rem; border-bottom: 1px solid var(--line); }
+.prep-card-art img { display: block; width: 100%; height: auto; aspect-ratio: 1400 / 454; object-fit: cover; transition: transform .5s var(--ease); }
+.prep-card:hover .prep-card-art img { transform: scale(1.03); }
+
 .prep-card h3 { font-size: 1.5rem; }
 .prep-card-desc { color: var(--text-muted); }
 .prep-topics { list-style: none; display: grid; gap: .45rem; padding-top: .9rem; border-top: 1px solid var(--line); font-size: .97rem; }
@@ -413,6 +419,24 @@ button { font: inherit; }
 .btn-sm { min-height: 2.5rem; padding: .45rem 1.1rem; font-size: .92rem; }
 .prep-page-title { display: flex; align-items: center; gap: 1rem; }
 .prep-page-title .prep-icon { width: 3rem; height: 3rem; flex: none; }
+.prep-page-title--art { display: block; margin-top: .9rem; }
+.prep-banner { display: block; width: 100%; height: auto; aspect-ratio: 1400 / 454; border-radius: var(--radius); border: 1px solid var(--line); box-shadow: 0 18px 50px rgba(0,0,0,.35); }
+
+/* Preparedness Center header artwork behind the page title */
+.page-hero--art { position: relative; isolation: isolate; overflow: hidden; }
+.page-hero-art { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.page-hero-art img { width: 100%; height: 100%; object-fit: cover; object-position: 70% center; }
+.page-hero-art::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(6,13,25,.9) 0%, rgba(6,13,25,.72) 38%, rgba(6,13,25,.15) 70%, rgba(6,13,25,0) 85%);
+}
+.page-hero--art p { color: var(--white); opacity: .92; }
+@media (max-width: 47.99em) {
+  .page-hero-art img { object-position: 78% center; }
+  .page-hero-art::after { background: linear-gradient(180deg, rgba(6,13,25,.7) 0%, rgba(6,13,25,.78) 60%, rgba(6,13,25,.9) 100%); }
+}
+@media (prefers-reduced-motion: reduce) { .prep-card-art img { transition: none; } }
+
 .prep-topic-list { list-style: none; display: grid; column-gap: 2.5rem; margin-top: 2rem; border-top: 1px solid var(--line); }
 .prep-topic { padding: 1.4rem 0; border-bottom: 1px solid var(--line); }
 .prep-topic h3 { font-size: 1.3rem; }
