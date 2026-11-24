@@ -225,7 +225,7 @@ button { font: inherit; }
 @media (max-width: 47.99em) {
   .hero-art { object-position: 66% center; }
   .hero-sky::after {
-    background: linear-gradient(180deg, rgba(6,13,25,.6) 0%, rgba(6,13,25,.35) 30%, rgba(6,13,25,.75) 62%, rgba(8,17,31,.95) 100%);
+    background: linear-gradient(180deg, rgba(6,13,25,.62) 0%, rgba(6,13,25,.6) 28%, rgba(6,13,25,.68) 50%, rgba(6,13,25,.8) 70%, rgba(8,17,31,.95) 100%);
   }
 }
 @media (prefers-reduced-motion: reduce) { .hero-art { animation: none; } }
